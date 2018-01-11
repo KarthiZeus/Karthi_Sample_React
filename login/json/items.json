@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "itemname": "coffee",
+      "price": 20,
+      "description": "trainee",
+      "id": 1
+    },
+    {
+      "itemname": "tea",
+      "price": 12,
+      "description": "trainee",
+      "id": 2
+    },
+    {
+      "itemname": "puff",
+      "price": "30",
+      "description": "puff",
+      "id": 3
+    }
+  ]
+}
