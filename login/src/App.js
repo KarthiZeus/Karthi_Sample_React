@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import A from './test';
+import Login from './components/login';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
@@ -10,10 +12,16 @@ class App extends Component {
           <span className="UserName">Welcome Karthi</span>
           </div>
         </header>
-        {/* <div className="container Itemhead">
-            List of Items
-          </div> */}
-        <A className="Items"/>
+        <Router>
+            <div>
+                  <Link to={'/'}></Link>
+                  
+               <Switch>
+                  <Route exact path='/' component={A} />
+                  <Route exact path='/viewcart' component={Login} />
+               </Switch>
+            </div>
+         </Router>
       </div>  
     );
   }
